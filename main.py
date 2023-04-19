@@ -1,5 +1,4 @@
-def nested_dict ():
-
+def nested_dict():
     """ a function to store and perform nested dictionary operatioons"""
 
     #  JSON file is dictionary inside a list
@@ -40,7 +39,7 @@ def nested_dict ():
 
     house_lst = []
     avg_price = 0
- #  loop to iterate and add the price per square meter in the house
+    #  loop to iterate and add the price per square meter in the house
 
     # for house in houses_rowwise:
     #
@@ -55,8 +54,19 @@ def nested_dict ():
     # avg_price = avg_price / len(house_lst)
     # return avg_price
 
-    mean_house_price = sum(houses_columnwise["price_aprox_usd"]) /len(houses_columnwise["price_aprox_usd"])
-    return mean_house_price
+    # mean_house_price = sum(houses_columnwise["price_aprox_usd"]) /len(houses_columnwise["price_aprox_usd"])
+    # return mean_house_price
+
+    price = houses_columnwise["price_aprox_usd"]  # defining a variable to extract list from the above dictionary
+    area = houses_columnwise["surface_covered_in_m2"]
+    price_per_m2 = []  # blank list to add the calculated price
+
+    for p, a in zip(price,
+                    area):  # loop to extract the values in list by using zip method to merge two lists in tuple format
+        price_m2 = p / a
+        price_per_m2.append(price_m2)
+    houses_columnwise["price_per_m2"] = price_per_m2
+    return houses_columnwise
 
 
 #  -------------------------------------------------------------------------------------------------------------------------------------------
@@ -65,6 +75,4 @@ def nested_dict ():
 #  start of main method to run all the above listed functions
 
 if __name__ == '__main__':
-    print(nested_dict ())
-
-
+    print(nested_dict())
