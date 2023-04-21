@@ -1,5 +1,5 @@
 def nested_dict():
-    """ a function to store and perform nested dictionary operatioons"""
+    """ a function to store and perform nested dictionary operations in the form of tabular data"""
 
     #  JSON file is dictionary inside a list
     # houses_rowwise = [
