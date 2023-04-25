@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 def nested_dict():
     """ a function to store and perform nested dictionary operations in the form of tabular data"""
 
@@ -56,7 +57,7 @@ def nested_dict():
 
     # mean_house_price = sum(houses_columnwise["price_aprox_usd"]) /len(houses_columnwise["price_aprox_usd"])
     # return mean_house_price
-
+'''
     price = houses_columnwise["price_aprox_usd"]  # defining a variable to extract list from the above dictionary
     area = houses_columnwise["surface_covered_in_m2"]
     price_per_m2 = []  # blank list to add the calculated price
@@ -67,6 +68,8 @@ def nested_dict():
         price_per_m2.append(price_m2)
     houses_columnwise["price_per_m2"] = price_per_m2
     return houses_columnwise
+'''
+
 
 
 #  -------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+!. first import numpy using command
+      "import numpy as np" // as ==> alias
+
+2. to create an array
+      first create a variable and store it as np.array([items],np.int64)
+      then to find the shape of the array
+       "variable.shape"
+       to find the datatype of array
+        "variable.dtype"
+
+3.
