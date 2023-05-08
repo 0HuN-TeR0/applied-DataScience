@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-def nested_dict():
+'''def nested_dict():
     """ a function to store and perform nested dictionary operations in the form of tabular data"""
 
     #  JSON file is dictionary inside a list
@@ -58,6 +58,8 @@ def nested_dict():
     # mean_house_price = sum(houses_columnwise["price_aprox_usd"]) /len(houses_columnwise["price_aprox_usd"])
     # return mean_house_price
 '''
+
+'''
     price = houses_columnwise["price_aprox_usd"]  # defining a variable to extract list from the above dictionary
     area = houses_columnwise["surface_covered_in_m2"]
     price_per_m2 = []  # blank list to add the calculated price
@@ -71,6 +73,11 @@ def nested_dict():
 '''
 
 
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------------
+import exp__d_any
+
+
 
 #  -------------------------------------------------------------------------------------------------------------------------------------------
 #  ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -78,4 +85,6 @@ def nested_dict():
 #  start of main method to run all the above listed functions
 
 if __name__ == '__main__':
-    print(nested_dict())
+    '''Use of main method to acess all the classes and module in the package'''
+   #  print(nested_dict())
+
