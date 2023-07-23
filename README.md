@@ -1,5 +1,5 @@
 # applied-DataScience
-This is my repo for all of the projects and practice I will be doing for WorldQuant university applied DataScience course.
+This is my repo for all of the projects and practice I will be doing for WorldQuant university applied DataScience course.(Projects are in branch #master)
 
 Labels (used in my repo serves as) :
 [ADD] for adding files,
